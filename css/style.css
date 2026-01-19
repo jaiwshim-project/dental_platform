@@ -166,6 +166,15 @@ p {
     display: none !important;
 }
 
+.nav-external {
+    color: var(--gold) !important;
+    font-weight: 600 !important;
+}
+
+.nav-external::after {
+    background: var(--gold) !important;
+}
+
 /* Mobile Menu */
 .mobile-menu-btn {
     display: none;
