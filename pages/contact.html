@@ -314,11 +314,41 @@
             });
         });
 
-        // Form Submit
+        // Form Submit - Email 연동
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('상담 신청이 완료되었습니다.\n빠른 시일 내에 연락드리겠습니다.');
-            this.reset();
+
+            // 폼 데이터 수집
+            var clinicName = document.getElementById('clinicName').value;
+            var name = document.getElementById('name').value;
+            var position = document.getElementById('position').value || '미입력';
+            var phone = document.getElementById('phone').value;
+            var email = document.getElementById('email').value || '미입력';
+            var region = document.getElementById('region').options[document.getElementById('region').selectedIndex].text;
+            var interest = document.getElementById('interest').options[document.getElementById('interest').selectedIndex].text;
+            var currentScore = document.getElementById('currentScore').options[document.getElementById('currentScore').selectedIndex].text;
+            var message = document.getElementById('message').value || '없음';
+
+            // 이메일 제목과 본문 구성
+            var subject = '[화이트서울치과 상담신청] ' + clinicName + ' - ' + name;
+            var body = '[ 화이트서울치과 상담 신청 ]\n\n' +
+                '■ 치과명: ' + clinicName + '\n' +
+                '■ 담당자명: ' + name + '\n' +
+                '■ 직책: ' + position + '\n' +
+                '■ 연락처: ' + phone + '\n' +
+                '■ 이메일: ' + email + '\n' +
+                '■ 지역: ' + region + '\n' +
+                '■ 관심 분야: ' + interest + '\n' +
+                '■ 현재 예상 DF-AI 점수: ' + currentScore + '\n\n' +
+                '■ 문의 내용:\n' + message + '\n\n' +
+                '---\n' +
+                '화이트서울치과 x DentalClinicFinder 상담 신청 폼에서 발송됨';
+
+            // mailto 링크 생성 및 실행
+            var mailtoLink = 'mailto:jaiwshim@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+            window.location.href = mailtoLink;
+
+            alert('이메일 앱이 열립니다.\n전송 버튼을 눌러 상담 신청을 완료해 주세요.');
         });
     </script>
 
