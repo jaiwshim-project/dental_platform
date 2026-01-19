@@ -1191,13 +1191,52 @@
 .coach-profile {
     display: flex;
     gap: 50px;
-    align-items: center;
-    max-width: 800px;
+    align-items: flex-start;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .coach-image {
     flex-shrink: 0;
+    text-align: center;
+}
+
+.coach-photo-frame {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(145deg, #8b7355 0%, #5c4a3a 20%, #8b7355 40%, #a08060 50%, #8b7355 60%, #5c4a3a 80%, #8b7355 100%);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.3),
+        inset 0 2px 4px rgba(255, 255, 255, 0.3),
+        inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.coach-photo-frame::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 2px solid #5c4a3a;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.coach-photo {
+    display: block;
+    max-width: 320px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.coach-awards {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: var(--gold);
+    font-weight: 600;
 }
 
 .coach-placeholder {
@@ -1552,6 +1591,10 @@
     .coach-profile {
         flex-direction: column;
         text-align: center;
+    }
+
+    .coach-photo {
+        max-width: 280px;
     }
 
     .summary-formula {
