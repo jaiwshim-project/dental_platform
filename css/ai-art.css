@@ -748,6 +748,74 @@
     line-height: 1.8;
 }
 
+/* Media Section */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.media-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--off-white);
+    padding: 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.media-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    border-color: var(--primary-green);
+}
+
+.media-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.media-content {
+    flex: 1;
+}
+
+.media-source {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: var(--primary-green);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.media-card h4 {
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.media-link {
+    font-size: 0.9rem;
+    color: var(--gold);
+    font-weight: 600;
+}
+
+.media-card:hover .media-link {
+    color: var(--primary-green);
+}
+
+/* Section Light */
+.section-light {
+    background: #fafafa;
+    padding: 100px 0;
+}
+
 /* Responsive */
 @media (max-width: 1200px) {
     .tech-grid {
@@ -811,6 +879,15 @@
     }
 
     .progress-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .media-card {
         flex-direction: column;
         text-align: center;
     }
