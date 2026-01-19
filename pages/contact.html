@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상담 신청 | 화이트서울치과 x 덴탈클리닉파인더</title>
+    <meta name="description" content="화이트서울치과 성장 전략 무료 상담을 신청하세요">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">🦷</div>
+                <div class="logo-text">화이트서울<span>치과</span></div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">홈</a></li>
+                <li><a href="diagnosis.html">현황 진단</a></li>
+                <li><a href="solution.html">솔루션</a></li>
+                <li><a href="strategy.html">5대 전략</a></li>
+                <li><a href="coaching.html">코칭 프로그램</a></li>
+                <li><a href="contact.html" class="nav-cta active">상담 신청</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header contact-header">
+        <div class="container">
+            <span class="page-badge">CONTACT</span>
+            <h1>화이트서울치과의<br><span class="highlight">새로운 미래</span>를 시작하세요</h1>
+            <p>무료 상담을 통해 맞춤형 성장 전략을 확인해 보세요</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-white">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>상담 신청</h2>
+                    <p>아래 양식을 작성해 주시면 빠른 시일 내에 연락드리겠습니다.</p>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="clinicName">치과명 *</label>
+                            <input type="text" id="clinicName" name="clinicName" placeholder="예: 화이트서울치과" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">담당자명 *</label>
+                                <input type="text" id="name" name="name" placeholder="성함을 입력해 주세요" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="position">직책</label>
+                                <input type="text" id="position" name="position" placeholder="예: 원장, 실장">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">연락처 *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="010-0000-0000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">이메일</label>
+                                <input type="email" id="email" name="email" placeholder="example@email.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="region">지역 *</label>
+                            <select id="region" name="region" required>
+                                <option value="">지역을 선택해 주세요</option>
+                                <option value="daejeon-junggu" selected>대전 중구</option>
+                                <option value="daejeon-seogu">대전 서구</option>
+                                <option value="daejeon-yuseonggu">대전 유성구</option>
+                                <option value="daejeon-donggu">대전 동구</option>
+                                <option value="daejeon-daedeokgu">대전 대덕구</option>
+                                <option value="other">기타 지역</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest">관심 분야 *</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">관심 분야를 선택해 주세요</option>
+                                <option value="coaching">10시간 1:1 집중 코칭</option>
+                                <option value="df-ai">DF-AI 신용점수 진단</option>
+                                <option value="ai-tutor">AI 상담튜터 시스템</option>
+                                <option value="full-package">전체 솔루션 패키지</option>
+                                <option value="consultation">일반 상담</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="currentScore">현재 예상 DF-AI 점수 (선택)</label>
+                            <select id="currentScore" name="currentScore">
+                                <option value="">모름</option>
+                                <option value="under-70">70점 미만</option>
+                                <option value="70-80">70~80점</option>
+                                <option value="80-85">80~85점</option>
+                                <option value="85-90">85~90점</option>
+                                <option value="over-90">90점 이상</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">문의 내용</label>
+                            <textarea id="message" name="message" rows="5" placeholder="궁금하신 점이나 현재 고민을 자유롭게 적어주세요"></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkmark"></span>
+                                <span>개인정보 수집 및 이용에 동의합니다. *</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            상담 신청하기 →
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <div class="contact-info-card">
+                        <h3>DentalClinicFinder</h3>
+                        <p>치과 디지털 신뢰 시스템 전문 기업</p>
+
+                        <div class="info-items">
+                            <div class="info-item">
+                                <span class="info-icon">👤</span>
+                                <div>
+                                    <strong>담당자</strong>
+                                    <p>심재우 대표</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">📧</span>
+                                <div>
+                                    <strong>이메일</strong>
+                                    <p>contact@dentalclinicfinder.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">📞</span>
+                                <div>
+                                    <strong>전화</strong>
+                                    <p>000-0000-0000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="why-contact-card">
+                        <h4>왜 상담을 신청해야 할까요?</h4>
+                        <ul>
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <span>무료 DF-AI 신용점수 진단</span>
+                            </li>
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <span>현재 상황에 맞는 맞춤형 전략 제안</span>
+                            </li>
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <span>경쟁 치과 대비 포지셔닝 분석</span>
+                            </li>
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <span>목표 달성을 위한 로드맵 제시</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="quote-card">
+                        <blockquote>
+                            "신뢰는 우연이 아니라<br>설계되는 것입니다."
+                        </blockquote>
+                        <p class="quote-sub">Trust is not accidental. It is designed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">자주 묻는 질문</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Q.</span>
+                        <h4>코칭 프로그램은 어떻게 진행되나요?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>10시간의 1:1 집중 코칭은 4단계(진단 → 이론 체득 → 시스템 구축 → 성과 측정)로 진행됩니다. 온라인 또는 오프라인으로 진행 가능하며, 원장님의 일정에 맞춰 유연하게 조율됩니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Q.</span>
+                        <h4>DF-AI 신용점수는 어떻게 측정되나요?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>환자 신뢰도(40%), 디지털 소통(30%), 정보 투명성(30%)의 3가지 지표를 AI가 분석하여 산출합니다. 리뷰의 진정성 계수, 온라인 응대 품질, E-E-A-T 요소 등을 종합적으로 평가합니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Q.</span>
+                        <h4>코칭 후 효과는 얼마나 지속되나요?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>코칭을 통해 구축된 시스템(합격 상담 스크립트, AI 상담튜터)은 지속적으로 사용 가능합니다. AI 튜터가 24시간 상담 품질을 모니터링하여 상승한 점수를 유지하고 발전시킵니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Q.</span>
+                        <h4>다른 지역 치과도 신청 가능한가요?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>네, 가능합니다. 본 프로그램은 대전 지역을 시작으로 전국 치과에 적용 가능한 보편적인 시스템입니다. 지역별 시장 분석을 통해 맞춤형 전략을 제안해 드립니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-text">화이트서울치과 x DentalClinicFinder</div>
+                    <p>임영일 원장님의 '자연치아 보존' 철학을<br>디지털 시대의 성장 동력으로 전환하는 전략 제안</p>
+                </div>
+                <div class="footer-links">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="diagnosis.html">현황 진단</a></li>
+                        <li><a href="solution.html">솔루션 소개</a></li>
+                        <li><a href="strategy.html">5대 전략</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>프로그램</h4>
+                    <ul>
+                        <li><a href="coaching.html">10시간 코칭</a></li>
+                        <li><a href="contact.html">상담 신청</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>연락처</h4>
+                    <ul>
+                        <li>DentalClinicFinder</li>
+                        <li>심재우 대표</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DentalClinicFinder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+
+        // Form Submit
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('상담 신청이 완료되었습니다.\n빠른 시일 내에 연락드리겠습니다.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
