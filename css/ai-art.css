@@ -748,6 +748,126 @@
     line-height: 1.8;
 }
 
+/* Video Showcase Section */
+.video-showcase {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.video-showcase h3 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.video-desc {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.video-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.video-thumbnail {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover .video-thumbnail img {
+    transform: scale(1.05);
+}
+
+.play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.video-card:hover .play-overlay {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.play-btn {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: var(--primary-green);
+    transition: all 0.3s ease;
+}
+
+.video-card:hover .play-btn {
+    transform: scale(1.1);
+    background: white;
+}
+
+.video-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.video-lang {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.video-info h4 {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.video-link {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease;
+}
+
+.video-card:hover .video-link {
+    color: var(--gold);
+}
+
 /* Media Section */
 .media-grid {
     display: grid;
@@ -890,5 +1010,13 @@
     .media-card {
         flex-direction: column;
         text-align: center;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-showcase h3 {
+        font-size: 1.5rem;
     }
 }
