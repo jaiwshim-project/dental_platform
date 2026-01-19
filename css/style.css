@@ -1374,6 +1374,7 @@ section {
 .text-center { text-align: center; }
 .text-gold { color: var(--gold); }
 .text-green { color: var(--primary-green); }
+.text-skyblue { color: #5bc0de; }
 .mb-20 { margin-bottom: 20px; }
 .mb-40 { margin-bottom: 40px; }
 .mt-20 { margin-top: 20px; }
