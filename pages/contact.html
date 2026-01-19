@@ -327,9 +327,14 @@
     <script>
         TalkerSDK.initializeTalkerSDK({ code: "book008", position: "right" });
         setTimeout(function() {
-            var talkerBtn = document.querySelector('.talker-launcher-text, .talker-btn-text, [class*="talker"] span');
-            if (talkerBtn) talkerBtn.textContent = '원장AI톡';
-        }, 1000);
+            var chatBtn = document.querySelector('.btn-chatbot');
+            if (chatBtn && !document.querySelector('.chatbot-label')) {
+                var label = document.createElement('div');
+                label.className = 'chatbot-label';
+                label.textContent = '원장AI톡';
+                chatBtn.parentNode.insertBefore(label, chatBtn);
+            }
+        }, 1500);
     </script>
 </body>
 </html>
