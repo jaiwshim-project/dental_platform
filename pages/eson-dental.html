@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>당진 이손치과병원 | 프리미엄 세이프티 전략</title>
+    <meta name="description" content="당진 이손치과병원의 지속 가능한 경쟁 우위 확보를 위한 프리미엄 경영 전략. 안전을 핵심 가치로 한 질적 성장 전략.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+
+    <style>
+        /* 히어로 섹션 - 가독성 향상 */
+        .eson-hero {
+            background: linear-gradient(135deg, #0f2744 0%, #1a3a5c 50%, #1e4976 100%);
+            padding: 120px 0 100px;
+            color: #ffffff;
+            text-align: center;
+        }
+        .eson-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+        }
+        .eson-hero .subtitle {
+            font-size: 1.4rem;
+            color: #e2e8f0;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+        }
+        .eson-hero .highlight {
+            color: #fbd38d;
+            font-weight: 700;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+        }
+
+        /* 섹션 헤더 공통 스타일 */
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-header .section-badge {
+            display: inline-block;
+            background: #1a365d;
+            color: #ffffff;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .section-header .section-title {
+            font-size: 2rem;
+            color: #1a202c;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+        .section-header .section-title .text-gold {
+            color: #b7791f;
+            font-weight: 800;
+        }
+
+        /* Summary 섹션 */
+        .summary-section {
+            background: #ffffff;
+            padding: 80px 0;
+        }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .summary-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-left: 5px solid;
+        }
+        .summary-card.status { border-color: #3182ce; }
+        .summary-card.crisis { border-color: #c53030; }
+        .summary-card.solution { border-color: #2f855a; }
+        .summary-card h3 {
+            font-size: 1rem;
+            color: #4a5568;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .summary-card h4 {
+            font-size: 1.25rem;
+            color: #1a202c;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .summary-card p {
+            color: #2d3748;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        /* 인포그래픽 섹션 */
+        .infographic-section {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+        .infographic-section.bg-cream {
+            background: linear-gradient(180deg, #fffbeb 0%, #fef3c7 100%);
+        }
+        .infographic-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .infographic-img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            margin-bottom: 40px;
+        }
+        .infographic-title {
+            text-align: center;
+            font-size: 1.6rem;
+            color: #1a202c;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        /* 전략 섹션 */
+        .strategy-section {
+            background: linear-gradient(180deg, #f0fdf4 0%, #dcfce7 100%);
+            padding: 80px 0;
+        }
+        .strategy-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .strategy-header h2 {
+            font-size: 2rem;
+            color: #1a202c;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .strategy-header p {
+            color: #2d3748;
+            font-size: 1.15rem;
+        }
+
+        .pivot-visual {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 50px 0;
+        }
+        .pivot-box {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            min-width: 280px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .pivot-box.from {
+            border: 3px solid #c53030;
+        }
+        .pivot-box.to {
+            border: 3px solid #b7791f;
+            background: linear-gradient(135deg, #fffff0 0%, #fefcbf 100%);
+        }
+        .pivot-box h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #1a202c;
+            font-weight: 700;
+        }
+        .pivot-box p {
+            color: #2d3748;
+        }
+        .pivot-arrow {
+            font-size: 3rem;
+            color: #2b6cb0;
+            font-weight: bold;
+        }
+
+        /* 모듈 섹션 */
+        .modules-section {
+            padding: 80px 0;
+            background: #ffffff;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .module-card {
+            background: #f7fafc;
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid #e2e8f0;
+        }
+        .module-card .module-num {
+            display: inline-block;
+            background: #1a365d;
+            color: #ffffff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        .module-card h4 {
+            font-size: 1.2rem;
+            color: #1a202c;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .module-card p {
+            color: #2d3748;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        /* 로드맵 섹션 */
+        .roadmap-section {
+            background: linear-gradient(135deg, #0f2744 0%, #1a3a5c 100%);
+            padding: 80px 0;
+            color: #ffffff;
+        }
+        .roadmap-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .roadmap-header h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+        }
+        .roadmap-header p {
+            color: #e2e8f0;
+        }
+        .roadmap-phases {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .phase-card {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 30px;
+            min-width: 280px;
+            max-width: 320px;
+            border: 1px solid rgba(255,255,255,0.25);
+        }
+        .phase-card h4 {
+            color: #fbd38d;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .phase-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .phase-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+            color: #ffffff;
+            font-size: 0.95rem;
+        }
+        .phase-card li:last-child {
+            border-bottom: none;
+        }
+
+        /* 결론 섹션 */
+        .conclusion-section {
+            padding: 80px 0;
+            background: linear-gradient(180deg, #fdf4ff 0%, #fae8ff 100%);
+            text-align: center;
+        }
+        .conclusion-quote {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.8rem;
+            color: #1a202c;
+            font-weight: 700;
+            line-height: 1.6;
+        }
+        .conclusion-quote .highlight {
+            color: #b7791f;
+            font-weight: 800;
+        }
+        .conclusion-subtext {
+            margin-top: 30px;
+            color: #2d3748;
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+        .conclusion-subtext strong {
+            color: #1a202c;
+        }
+
+        /* PDF 뷰어 섹션 */
+        .pdf-viewer-section {
+            padding: 80px 0;
+            background: linear-gradient(180deg, #e8f4fd 0%, #dbeafe 100%);
+        }
+        .pdf-viewer-section.alt-bg {
+            background: #f7fafc;
+        }
+        .pdf-viewer-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .pdf-viewer-title {
+            text-align: center;
+            font-size: 1.6rem;
+            color: #1a202c;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        .pdf-viewer-wrapper {
+            background: #1a202c;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        .pdf-viewer-header {
+            background: #2d3748;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .pdf-viewer-header h4 {
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 0;
+        }
+        .pdf-download-btn {
+            background: #3182ce;
+            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        .pdf-download-btn:hover {
+            background: #2c5282;
+        }
+        .pdf-embed {
+            width: 100%;
+            height: 700px;
+            border: none;
+            display: block;
+        }
+        .pdf-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .pdf-tab {
+            padding: 12px 24px;
+            background: #e2e8f0;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #4a5568;
+            transition: all 0.3s;
+        }
+        .pdf-tab:hover {
+            background: #cbd5e0;
+        }
+        .pdf-tab.active {
+            background: #1a365d;
+            color: #ffffff;
+        }
+        .pdf-content {
+            display: none;
+        }
+        .pdf-content.active {
+            display: block;
+        }
+
+        /* 태블릿 */
+        @media (max-width: 1024px) {
+            .summary-grid { grid-template-columns: 1fr; }
+            .modules-grid { grid-template-columns: 1fr; }
+            .pivot-visual { flex-direction: column; gap: 20px; }
+            .pivot-arrow { transform: rotate(90deg); font-size: 2rem; }
+            .roadmap-phases { flex-direction: column; align-items: center; }
+            .phase-card { max-width: 100%; width: 100%; }
+        }
+
+        /* 모바일 */
+        @media (max-width: 768px) {
+            /* 히어로 섹션 */
+            .eson-hero {
+                padding: 80px 0 50px;
+            }
+            .eson-hero h1 {
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+            }
+            .eson-hero .subtitle {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            /* 섹션 공통 */
+            .section-header {
+                margin-bottom: 25px;
+            }
+            .section-header .section-badge {
+                padding: 6px 14px;
+                font-size: 0.75rem;
+                margin-bottom: 10px;
+            }
+            .section-header .section-title {
+                font-size: 1.3rem;
+                line-height: 1.4;
+            }
+
+            /* Summary 섹션 */
+            .summary-section {
+                padding: 50px 0;
+            }
+            .summary-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                margin-top: 25px;
+            }
+            .summary-card {
+                padding: 20px;
+                border-radius: 12px;
+            }
+            .summary-card h3 {
+                font-size: 0.85rem;
+                margin-bottom: 8px;
+            }
+            .summary-card h4 {
+                font-size: 1.05rem;
+                margin-bottom: 10px;
+            }
+            .summary-card p {
+                font-size: 0.85rem;
+                line-height: 1.6;
+            }
+
+            /* PDF 뷰어 섹션 */
+            .pdf-viewer-section {
+                padding: 50px 0;
+            }
+            .pdf-tabs {
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+            .pdf-tab {
+                padding: 10px 16px;
+                font-size: 0.85rem;
+            }
+            .pdf-viewer-wrapper {
+                border-radius: 12px;
+            }
+            .pdf-viewer-header {
+                padding: 12px 15px;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            .pdf-viewer-header h4 {
+                font-size: 0.85rem;
+                line-height: 1.4;
+            }
+            .pdf-download-btn {
+                padding: 8px 14px;
+                font-size: 0.8rem;
+            }
+            .pdf-embed {
+                height: 400px;
+            }
+
+            /* 인포그래픽 섹션 */
+            .infographic-section {
+                padding: 50px 0;
+            }
+            .infographic-title {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+            .infographic-img {
+                border-radius: 12px;
+                margin-bottom: 25px;
+            }
+
+            /* 전략 섹션 */
+            .strategy-section {
+                padding: 50px 0;
+            }
+            .strategy-header {
+                margin-bottom: 30px;
+            }
+            .strategy-header h2 {
+                font-size: 1.3rem;
+                margin-bottom: 10px;
+            }
+            .strategy-header p {
+                font-size: 0.9rem;
+            }
+            .pivot-visual {
+                margin: 30px 0;
+                gap: 15px;
+            }
+            .pivot-box {
+                padding: 25px 20px;
+                min-width: auto;
+                width: 100%;
+                border-radius: 12px;
+            }
+            .pivot-box h4 {
+                font-size: 1.1rem;
+            }
+            .pivot-box p {
+                font-size: 0.85rem;
+            }
+            .pivot-arrow {
+                transform: rotate(90deg);
+                font-size: 2rem;
+            }
+
+            /* 모듈 섹션 */
+            .modules-section {
+                padding: 50px 0;
+            }
+            .modules-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                margin-top: 25px;
+            }
+            .module-card {
+                padding: 20px;
+                border-radius: 12px;
+            }
+            .module-card .module-num {
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                font-size: 1rem;
+                margin-bottom: 12px;
+            }
+            .module-card h4 {
+                font-size: 1rem;
+                margin-bottom: 8px;
+            }
+            .module-card p {
+                font-size: 0.85rem;
+                line-height: 1.6;
+            }
+
+            /* 로드맵 섹션 */
+            .roadmap-section {
+                padding: 50px 0;
+            }
+            .roadmap-header {
+                margin-bottom: 30px;
+            }
+            .roadmap-header h2 {
+                font-size: 1.3rem;
+            }
+            .roadmap-phases {
+                gap: 15px;
+            }
+            .phase-card {
+                padding: 20px;
+                min-width: auto;
+                max-width: 100%;
+                border-radius: 12px;
+            }
+            .phase-card h4 {
+                font-size: 0.95rem;
+                margin-bottom: 12px;
+            }
+            .phase-card li {
+                padding: 8px 0;
+                font-size: 0.85rem;
+            }
+
+            /* 결론 섹션 */
+            .conclusion-section {
+                padding: 50px 0;
+            }
+            .conclusion-quote {
+                font-size: 1.2rem;
+                line-height: 1.5;
+            }
+            .conclusion-subtext {
+                margin-top: 20px;
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+        }
+
+        /* 소형 모바일 */
+        @media (max-width: 480px) {
+            .eson-hero h1 { font-size: 1.4rem; }
+            .eson-hero .subtitle { font-size: 0.9rem; }
+            .section-header .section-title { font-size: 1.15rem; }
+            .pdf-embed { height: 350px; }
+            .pdf-tab {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+            .conclusion-quote { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="DentalClinicFinder" class="logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">홈</a></li>
+                <li><a href="diagnosis.html">현황 진단</a></li>
+                <li><a href="solution.html">솔루션</a></li>
+                <li><a href="https://jaiwshim-project.github.io/dental_ad/index.html" target="_blank" class="nav-external">토탈 솔루션</a></li>
+                <li><a href="strategy.html">5대 전략</a></li>
+                <li><a href="ai-art-space.html">AI 갤러리&시네마</a></li>
+                <li><a href="coaching.html">코칭 프로그램</a></li>
+                <li><a href="contact.html" class="nav-cta">상담 신청</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="eson-hero">
+        <div class="container">
+            <h1>당진 이손치과병원</h1>
+            <p class="subtitle">
+                가격 경쟁을 넘어 <span class="highlight">'안전'</span>으로 승부하는<br>
+                프리미엄 경영 전략
+            </p>
+        </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section class="summary-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Executive Summary</span>
+                <h2 class="section-title">규모의 경제를 넘어 <span class="text-gold">'질적 성장'</span>으로의 전환</h2>
+            </div>
+            <div class="summary-grid">
+                <div class="summary-card status">
+                    <h3>Current Status (현황)</h3>
+                    <h4>압도적 매출, 그러나 높은 고정비</h4>
+                    <p>연 매출 약 44억 원(지역 Top-tier) 달성. 그러나 40~50명의 인력과 대형 시설 유지로 인한 고정비 레버리지가 높아, 매출 감소 시 수익성 악화 위험이 큼.</p>
+                </div>
+                <div class="summary-card crisis">
+                    <h3>Crisis (위기)</h3>
+                    <h4>샌드위치 위기 (Sandwich Crisis)</h4>
+                    <p>'반값 임플란트(59만 원)'를 내세운 안녕플란트와 '야간/주말 진료'를 앞세운 프랜차이즈 사이에서 가격과 편의성 경쟁력이 약화됨.</p>
+                </div>
+                <div class="summary-card solution">
+                    <h3>Solution (해법)</h3>
+                    <h4>융합 진료를 통한 가치 독점</h4>
+                    <p>'치과+가정의학과+성형외과' 협진 시스템을 활용해 고위험군 환자(고혈압/당뇨)를 위한 '가장 안전한 병원'으로 포지셔닝.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Viewer Section -->
+    <section class="pdf-viewer-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">전략 보고서</span>
+                <h2 class="section-title">상세 분석 자료</h2>
+            </div>
+
+            <!-- PDF Tabs -->
+            <div class="pdf-tabs">
+                <button class="pdf-tab active" onclick="showPDF('safety')">안전 가치 전략</button>
+                <button class="pdf-tab" onclick="showPDF('trust')">신뢰 엔지니어링</button>
+            </div>
+
+            <!-- PDF Content 1: Safety Value Strategy -->
+            <div id="pdf-safety" class="pdf-content active">
+                <div class="pdf-viewer-container">
+                    <div class="pdf-viewer-wrapper">
+                        <div class="pdf-viewer-header">
+                            <h4>당진 이손치과병원: 지속 가능한 경쟁 우위 확보를 위한 경영 전략 분석</h4>
+                            <a href="../pdf/safety-value-strategy.pdf" download class="pdf-download-btn">다운로드</a>
+                        </div>
+                        <embed src="../pdf/safety-value-strategy.pdf" type="application/pdf" class="pdf-embed">
+                    </div>
+                </div>
+            </div>
+
+            <!-- PDF Content 2: Healthcare Trust Engineering -->
+            <div id="pdf-trust" class="pdf-content">
+                <div class="pdf-viewer-container">
+                    <div class="pdf-viewer-wrapper">
+                        <div class="pdf-viewer-header">
+                            <h4>덴탈 헬스케어의 패러다임 전환: AI와 인문학으로 완성하는 '신뢰 경영'</h4>
+                            <a href="../pdf/healthcare-trust-engineering.pdf" download class="pdf-download-btn">다운로드</a>
+                        </div>
+                        <embed src="../pdf/healthcare-trust-engineering.pdf" type="application/pdf" class="pdf-embed">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infographic Section 1 -->
+    <section class="infographic-section">
+        <div class="container">
+            <div class="infographic-container">
+                <h3 class="infographic-title">프리미엄 경영 전략 Overview</h3>
+                <img src="../images/eson-strategy.png" alt="당진 이손치과병원 프리미엄 경영 전략" class="infographic-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy Section -->
+    <section class="strategy-section">
+        <div class="container">
+            <div class="strategy-header">
+                <h2>전략적 피봇: '규모의 경쟁'에서 '가치의 독점'으로</h2>
+                <p>시설과 가격은 복제 가능하지만, '신뢰'는 복제할 수 없습니다</p>
+            </div>
+            <div class="pivot-visual">
+                <div class="pivot-box from">
+                    <h4>Volume Competition</h4>
+                    <p>(규모 경쟁)</p>
+                    <p style="margin-top: 15px; font-size: 0.95rem;">"우리는 당진에서<br>가장 큰 치과입니다"</p>
+                </div>
+                <div class="pivot-arrow">→</div>
+                <div class="pivot-box to">
+                    <h4>Value Monopoly</h4>
+                    <p>(가치 독점)</p>
+                    <p style="margin-top: 15px; font-size: 0.95rem;">"우리는 기저질환이 있어도<br>수술 가능한, 당진에서<br>가장 안전한 병원입니다"</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <p style="color: #4a5568; font-size: 1.1rem;"><strong>Core Philosophy:</strong> 노블레스 오블리주 마케팅<br>(높은 수가는 사회적 책임과 안전을 위한 비용)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section class="modules-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">실행 모듈</span>
+                <h2 class="section-title">4가지 핵심 실행 전략</h2>
+            </div>
+            <div class="modules-grid">
+                <div class="module-card">
+                    <span class="module-num">1</span>
+                    <h4>안전 보증(Safety Warranty) 전략</h4>
+                    <p>가격 저항을 무력화하는 '가치' 중심 커뮤니케이션. "왜 120만 원인가요?" → "저희는 59만 원에 수술할 수 없습니다. 안전 시스템을 포기할 수 없기 때문입니다."</p>
+                </div>
+                <div class="module-card">
+                    <span class="module-num">2</span>
+                    <h4>융합 진료 시스템</h4>
+                    <p>'의원'은 흉내 낼 수 없는 '병원'만의 무기. 가정의학과 협진(혈압/당뇨 조절) → 치과 수술(대학병원급 안전성) → 성형외과 연계(심미 보철 & 안면 교정).</p>
+                </div>
+                <div class="module-card">
+                    <span class="module-num">3</span>
+                    <h4>운영 및 세일즈 효율화</h4>
+                    <p>고비용 구조를 상쇄하는 3가지 순환: Internal Branding(직원 복지 강화 → 이탈 방지), Dead Time Management(No-Show 시간 활용 → CSR), Friendly Service(환자 경험 개선 → 재방문율 상승).</p>
+                </div>
+                <div class="module-card">
+                    <span class="module-num">4</span>
+                    <h4>평판 관리 시스템</h4>
+                    <p>리스크를 기회로 바꾸는 전략. 법적 대응(Conflict) → 미디어 협력 & 스토리텔링(Partnership). Digital Storytelling과 Review Response를 통한 도덕적 만족감 제공.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infographic Section 2 -->
+    <section class="infographic-section bg-cream">
+        <div class="container">
+            <div class="infographic-container">
+                <h3 class="infographic-title">AI와 인문학의 '신뢰 엔지니어링'</h3>
+                <img src="../images/eson-trust-engineering.png" alt="신뢰 엔지니어링 전략" class="infographic-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap-section">
+        <div class="container">
+            <div class="roadmap-header">
+                <h2>로드맵: 당진 No.1 메디컬 세이프티 허브</h2>
+                <p style="opacity: 0.9;">단계별 실행 전략</p>
+            </div>
+            <div class="roadmap-phases">
+                <div class="phase-card">
+                    <h4>Phase 1: Foundation (즉시 실행)</h4>
+                    <ul>
+                        <li>세일즈 스크립트 재설계</li>
+                        <li>온라인 리뷰 대응 매뉴얼 구축</li>
+                        <li>가치 증명 자료 상담실 비치</li>
+                    </ul>
+                </div>
+                <div class="phase-card">
+                    <h4>Phase 2: Integration (중기)</h4>
+                    <ul>
+                        <li>가정의학과-치과 협진 프로토콜 고도화</li>
+                        <li>AI 예약 관리 시스템 도입</li>
+                        <li>직원 교육 프로그램 체계화</li>
+                    </ul>
+                </div>
+                <div class="phase-card">
+                    <h4>Phase 3: Dominance (장기)</h4>
+                    <ul>
+                        <li>'당진 안전 기준' 선포</li>
+                        <li>CSR 브랜드 자산화</li>
+                        <li>지역 신뢰 독점 확보</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="conclusion-section">
+        <div class="container">
+            <p class="conclusion-quote">
+                규모가 경쟁력이던 시대는 지났습니다.<br>
+                이제는 <span class="highlight">'안전'</span>이 경쟁력입니다.
+            </p>
+            <p class="conclusion-subtext">
+                이손치과병원의 지난 10년이 '성장'의 역사였다면,<br>
+                앞으로의 10년은 '신뢰'의 역사가 되어야 합니다.<br><br>
+                저가 경쟁의 파도를 넘는 유일한 배는<br>
+                <strong>'타협하지 않는 안전(Uncompromised Safety)'</strong>입니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>이손치과병원만의 '프리미엄 세이프티' 전략을<br>함께 설계하시겠습니까?</h2>
+            <p>DentalClinicFinder의 전문 컨설팅으로 지역 신뢰 독점을 실현하세요</p>
+            <a href="contact.html" class="btn btn-primary">무료 상담 신청하기 →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-text">당진 이손치과병원 x <span class="text-skyblue">DentalClinicFinder</span></div>
+                    <p>이창규 병원장님의 '안전 제일' 철학을<br>디지털 시대의 경쟁 우위로 전환하는 전략 제안</p>
+                </div>
+                <div class="footer-links">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="diagnosis.html">현황 진단</a></li>
+                        <li><a href="solution.html">솔루션 소개</a></li>
+                        <li><a href="https://jaiwshim-project.github.io/dental_ad/index.html" target="_blank">토탈 솔루션</a></li>
+                        <li><a href="strategy.html">5대 전략</a></li>
+                        <li><a href="ai-art-space.html">AI 갤러리&시네마</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>협력 병원</h4>
+                    <ul>
+                        <li><a href="eson-dental.html" class="partner-hospital-btn">당진 이손치과</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>프로그램</h4>
+                    <ul>
+                        <li><a href="coaching.html">10시간 코칭</a></li>
+                        <li><a href="contact.html">상담 신청</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>연락처</h4>
+                    <ul>
+                        <li>치과 디지털 신뢰 시스템 전문 기업</li>
+                        <li><strong>DentalClinicFinder</strong></li>
+                        <li>심재우 대표</li>
+                        <li>010-2397-5734 | jaiwshim@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DentalClinicFinder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+
+    <!-- PDF Tab Script -->
+    <script>
+        function showPDF(type) {
+            // Hide all PDF contents
+            document.querySelectorAll('.pdf-content').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            // Remove active from all tabs
+            document.querySelectorAll('.pdf-tab').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            // Show selected PDF content
+            if (type === 'safety') {
+                document.getElementById('pdf-safety').classList.add('active');
+                document.querySelectorAll('.pdf-tab')[0].classList.add('active');
+            } else if (type === 'trust') {
+                document.getElementById('pdf-trust').classList.add('active');
+                document.querySelectorAll('.pdf-tab')[1].classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
