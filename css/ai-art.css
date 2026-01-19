@@ -1,0 +1,817 @@
+/* ===== AI Gallery & Cinema Page Styles ===== */
+
+/* Page Header */
+.ai-art-header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-art-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 80%, rgba(201, 162, 39, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(45, 90, 61, 0.15) 0%, transparent 50%);
+}
+
+/* AI Intro Section */
+.ai-intro {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.ai-intro-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.lead-text {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: var(--dark-gray);
+    margin-bottom: 30px;
+}
+
+.ai-philosophy {
+    background: linear-gradient(135deg, #f8f6f0 0%, #e8f0e8 100%);
+    padding: 35px;
+    border-radius: 20px;
+    border-left: 5px solid var(--gold);
+}
+
+.ai-philosophy blockquote {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.ai-philosophy p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.ai-intro-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.visual-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.visual-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+.visual-icon {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.visual-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: var(--primary-green);
+}
+
+.visual-card p {
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+}
+
+/* Section Gradient (Dark) */
+.section-gradient {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-light) 100%);
+    padding: 100px 0;
+    color: white;
+}
+
+.section-header.light .section-badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.section-header.light .section-title {
+    color: white;
+}
+
+.section-header.light .section-desc {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Section Dark */
+.section-dark {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 100px 0;
+    color: white;
+}
+
+/* 6-in-1 Tech Grid */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.tech-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tech-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.tech-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.tech-card h4 {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.tech-card p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* Gallery Showcase */
+.gallery-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.gallery-location, .cinema-location {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--off-white);
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--primary-green);
+}
+
+.location-icon {
+    font-size: 1.2rem;
+}
+
+.gallery-info h3, .cinema-info h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.gallery-info > p, .cinema-info > p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* QR Experience */
+.qr-experience {
+    display: flex;
+    gap: 30px;
+    background: var(--off-white);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.qr-visual {
+    text-align: center;
+}
+
+.qr-placeholder {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: 3px solid var(--primary-green);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+.qr-visual p {
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+}
+
+.qr-features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.qr-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.qf-icon {
+    font-size: 1.3rem;
+}
+
+.qr-feature span:last-child {
+    font-size: 0.95rem;
+    color: var(--dark-gray);
+}
+
+/* Gallery Features */
+.gallery-features {
+    list-style: none;
+}
+
+.gallery-features li {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.gallery-features li:last-child {
+    border-bottom: none;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.gallery-features strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: var(--primary-green);
+}
+
+.gallery-features p {
+    font-size: 0.95rem;
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+/* Gallery Preview */
+.gallery-preview {
+    position: relative;
+}
+
+.preview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.preview-item {
+    aspect-ratio: 1;
+}
+
+.preview-item.large {
+    grid-row: span 2;
+}
+
+.art-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #2D5A3D 0%, #1a1a2e 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.art-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 70%, rgba(201, 162, 39, 0.3) 0%, transparent 50%);
+}
+
+.art-icon {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.art-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    position: relative;
+    z-index: 1;
+}
+
+.preview-caption {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+}
+
+/* Cinema Showcase */
+.cinema-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.cinema-visual {
+    position: relative;
+}
+
+.cinema-screen {
+    background: #000;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.screen-content {
+    background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+    border-radius: 15px;
+    padding: 60px 40px;
+    text-align: center;
+    position: relative;
+}
+
+.screen-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.screen-subtitle {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+}
+
+.play-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: var(--gold);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.play-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(201, 162, 39, 0.5);
+}
+
+.screen-frame {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid rgba(201, 162, 39, 0.3);
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+/* Cinema Info */
+.cinema-info h3 {
+    color: white;
+}
+
+.cinema-info > p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.cinema-concept {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.cinema-concept h4 {
+    color: var(--gold);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.concept-items {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.concept-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.ci-icon {
+    font-size: 1.8rem;
+}
+
+.concept-item span:last-child {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.concept-arrow {
+    color: var(--gold);
+    font-size: 1.2rem;
+}
+
+/* Cinema Features */
+.cinema-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.cinema-feature {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.cinema-feature:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.cf-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.cinema-feature h4 {
+    color: white;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+}
+
+.cinema-feature p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Benefits Grid V2 */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.benefit-card-v2 {
+    background: var(--off-white);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.benefit-card-v2:hover {
+    background: white;
+    box-shadow: var(--shadow);
+    transform: translateY(-5px);
+}
+
+.benefit-icon-large {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.benefit-card-v2 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--primary-green);
+}
+
+.benefit-card-v2 p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--dark-gray);
+}
+
+/* Global Recognition */
+.global-recognition {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.recognition-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.recognition-content > p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.recognition-highlight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-light);
+}
+
+.flag {
+    font-size: 3rem;
+}
+
+.recognition-highlight strong {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--primary-green);
+}
+
+.recognition-highlight p {
+    font-size: 0.95rem;
+    color: var(--dark-gray);
+    margin: 0;
+}
+
+.recognition-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.museum-card {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.museum-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.museum-card p {
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+/* Vision Section */
+.vision-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.vision-text h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.vision-quote {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: var(--dark-gray);
+    padding: 30px;
+    background: var(--off-white);
+    border-radius: 20px;
+    border-left: 5px solid var(--gold);
+    margin-bottom: 25px;
+}
+
+.vision-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.author-info strong {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--primary-green);
+}
+
+.author-info span {
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+}
+
+.vision-card {
+    background: var(--primary-green);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.vision-card h4 {
+    color: var(--gold);
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+
+.vision-card ul {
+    list-style: none;
+}
+
+.vision-card ul li {
+    padding: 12px 0;
+    font-size: 1.05rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.vision-card ul li:last-child {
+    border-bottom: none;
+}
+
+/* Coming Soon */
+.coming-soon {
+    text-align: center;
+    color: white;
+}
+
+.light-badge {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+}
+
+.coming-soon h2 {
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.coming-soon > p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.15rem;
+    margin-bottom: 40px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.progress-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px 40px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.progress-icon {
+    font-size: 2rem;
+}
+
+.progress-label {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.progress-status {
+    background: var(--gold);
+    color: var(--primary-green-dark);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.coming-soon-note {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .tech-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .ai-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .ai-intro-visual {
+        flex-direction: row;
+    }
+
+    .gallery-showcase,
+    .cinema-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .global-recognition,
+    .vision-content {
+        grid-template-columns: 1fr;
+    }
+
+    .progress-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ai-intro-visual {
+        flex-direction: column;
+    }
+
+    .qr-experience {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cinema-features {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .concept-items {
+        justify-content: center;
+    }
+
+    .progress-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
