@@ -1656,43 +1656,935 @@
 }
 
 @media (max-width: 768px) {
+    /* Page Header - compact */
     .page-header {
-        padding: 140px 0 80px;
+        padding: 70px 0 35px;
+    }
+
+    .page-badge {
+        padding: 5px 12px;
+        font-size: 0.7rem;
+        margin-bottom: 12px;
     }
 
     .page-header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .page-header p {
+        font-size: 0.9rem;
+    }
+
+    /* Section Variants - compact */
+    .section-white,
+    .section-gray,
+    .section-green {
+        padding: 35px 0;
+    }
+
+    /* Market Grid - compact */
+    .market-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .market-card {
+        padding: 18px 12px;
+        border-radius: 12px;
+    }
+
+    .market-icon {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+
+    .market-card h3 {
+        font-size: 0.85rem;
+        margin-bottom: 5px;
+    }
+
+    .market-number {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .market-card p {
+        font-size: 0.7rem;
+    }
+
+    /* Insight Box - compact */
+    .insight-box {
+        padding: 20px;
+        border-radius: 12px;
+        gap: 15px;
+    }
+
+    .insight-icon {
         font-size: 2rem;
     }
 
-    .market-grid,
-    .swot-grid,
+    .insight-box p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    /* SWOT Grid - compact */
+    .swot-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .swot-card {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .swot-header {
+        gap: 10px;
+        margin-bottom: 12px;
+        padding-bottom: 10px;
+    }
+
+    .swot-icon {
+        font-size: 1.2rem;
+    }
+
+    .swot-header h3 {
+        font-size: 1rem;
+    }
+
+    .swot-card ul li {
+        padding: 6px 0;
+        padding-left: 18px;
+        font-size: 0.85rem;
+    }
+
+    /* Conclusion Box - compact */
+    .conclusion-box {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .conclusion-box p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* Ranking Image - compact */
+    .ranking-image-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .ranking-image-header {
+        margin-bottom: 15px;
+    }
+
+    .ranking-image-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .ranking-image-header p {
+        font-size: 0.85rem;
+    }
+
+    .ranking-image-container {
+        padding: 8px;
+    }
+
+    .ranking-image-inner {
+        padding: 5px;
+    }
+
+    .ranking-highlight {
+        margin-top: 15px;
+        padding: 10px 18px;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .highlight-badge {
+        padding: 4px 10px;
+        font-size: 0.75rem;
+    }
+
+    .highlight-text {
+        font-size: 0.85rem;
+    }
+
+    .highlight-text strong {
+        font-size: 0.95rem;
+    }
+
+    /* Score Detail Grid - compact */
+    .score-detail-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .score-detail-card {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .score-detail-header {
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .score-detail-icon {
+        font-size: 1.5rem;
+    }
+
+    .score-detail-header h3 {
+        font-size: 1rem;
+    }
+
+    .weight-badge {
+        padding: 4px 10px;
+        font-size: 0.7rem;
+    }
+
+    .score-comparison {
+        gap: 12px;
+        margin-bottom: 15px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .score-comparison .label {
+        font-size: 0.75rem;
+    }
+
+    .score-comparison .value {
+        font-size: 1.5rem;
+    }
+
+    .score-arrow {
+        font-size: 1.2rem;
+    }
+
+    .score-detail-desc p {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+
+    /* Transformation - compact */
+    .transformation-visual {
+        gap: 20px;
+        margin-bottom: 25px;
+    }
+
+    .transform-card {
+        padding: 25px 20px;
+        border-radius: 15px;
+        min-width: auto;
+        width: 100%;
+    }
+
+    .transform-icon {
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+
+    .transform-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .transform-card ul li {
+        padding: 5px 0;
+        font-size: 0.85rem;
+    }
+
+    .transform-arrow {
+        font-size: 1.5rem;
+    }
+
+    .transform-arrow span {
+        font-size: 0.8rem;
+    }
+
+    /* Solution Grid - compact */
+    .solution-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .solution-card {
+        border-radius: 15px;
+    }
+
+    .solution-header-card {
+        padding: 20px;
+    }
+
+    .solution-header-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 6px;
+    }
+
+    .solution-header-card p {
+        font-size: 0.85rem;
+    }
+
+    .solution-diagram {
+        padding: 20px;
+    }
+
+    .qlrcq-cycle {
+        gap: 8px;
+    }
+
+    .qlrcq-item {
+        width: 55px;
+        height: 55px;
+        font-size: 1rem;
+    }
+
+    .qlrcq-item small {
+        font-size: 0.6rem;
+    }
+
+    .solution-steps {
+        padding: 20px;
+    }
+
+    .step-item {
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .step-num {
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+
+    .step-text {
+        font-size: 0.85rem;
+    }
+
+    .step-arrow {
+        font-size: 1rem;
+        padding: 3px 0;
+    }
+
+    .solution-desc {
+        padding: 18px 20px 25px;
+    }
+
+    .solution-desc p {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    /* AI Process - compact */
+    .ai-process {
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .ai-step {
+        max-width: 100%;
+    }
+
+    .ai-step-icon {
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+
+    .ai-step h4 {
+        font-size: 1rem;
+        margin-bottom: 6px;
+    }
+
+    .ai-step > p {
+        font-size: 0.8rem;
+        margin-bottom: 12px;
+    }
+
+    .ai-logos {
+        gap: 8px;
+    }
+
+    .ai-logo {
+        padding: 10px;
+        font-size: 0.75rem;
+    }
+
+    .ai-arrow {
+        font-size: 1.5rem;
+        padding-top: 0;
+    }
+
+    .feedback-example {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .feedback-example p {
+        font-size: 0.8rem;
+        margin-bottom: 8px;
+    }
+
+    .benefit-box {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    /* External Solution Card - compact */
+    .external-solution-card {
+        padding: 25px;
+        border-radius: 15px;
+    }
+
+    .external-solution-content h2 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .external-solution-content p {
+        font-size: 0.9rem;
+        margin-bottom: 18px;
+    }
+
+    .external-solution-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+    }
+
+    /* Results Table - compact */
+    .result-row {
+        grid-template-columns: 1fr 1fr;
+        padding: 12px 15px;
+        gap: 8px;
+    }
+
+    .result-col {
+        font-size: 0.8rem;
+    }
+
+    .result-col.gold {
+        font-size: 1rem;
+    }
+
+    /* Strategy Page - compact */
+    .strategy-detail {
+        padding: 35px 0;
+    }
+
+    .strategy-header {
+        margin-bottom: 25px;
+    }
+
+    .strategy-num {
+        padding: 5px 14px;
+        font-size: 0.8rem;
+        margin-bottom: 12px;
+    }
+
+    .strategy-header h2 {
+        font-size: 1.4rem;
+        margin-bottom: 6px;
+    }
+
+    .strategy-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .strategy-objective {
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 25px;
+    }
+
+    .strategy-objective h4 {
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+    }
+
+    .strategy-objective p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .strategy-howto h4 {
+        margin-bottom: 15px;
+        font-size: 1.05rem;
+    }
+
+    /* How-to Grid - compact */
     .howto-grid,
     .eeat-grid,
     .talkhub-features,
     .system-grid {
         grid-template-columns: 1fr;
+        gap: 12px;
     }
 
-    .phases-timeline,
-    .overview-stats,
-    .deliverables-grid,
-    .results-grid {
+    .howto-card {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .howto-num {
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    .howto-card h5 {
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+    }
+
+    .howto-card p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    /* Value Flow - compact */
+    .value-flow {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .value-step {
+        max-width: 100%;
+    }
+
+    .value-icon {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    .value-step h5 {
+        font-size: 0.95rem;
+        margin-bottom: 5px;
+    }
+
+    .value-step p {
+        font-size: 0.8rem;
+    }
+
+    .value-arrow {
+        font-size: 1.2rem;
+        padding-top: 0;
+    }
+
+    /* EEAT/TalkHub Cards - compact */
+    .eeat-card,
+    .talkhub-card,
+    .system-card {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .eeat-icon,
+    .talkhub-icon,
+    .system-icon {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    .eeat-card h5,
+    .talkhub-card h5,
+    .system-card h5 {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+
+    /* System Flow - compact */
+    .system-flow {
+        flex-direction: column;
+        padding: 25px;
+        gap: 20px;
+        border-radius: 15px;
+    }
+
+    .flow-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .flow-outputs {
+        gap: 10px;
+    }
+
+    .flow-output {
+        padding: 12px 18px;
+        gap: 10px;
+    }
+
+    .flow-output span {
+        font-size: 0.85rem;
+    }
+
+    /* Summary Formula - compact */
+    .summary-formula {
+        gap: 15px;
+    }
+
+    .formula-icon {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+
+    .formula-item p {
+        font-size: 0.85rem;
+    }
+
+    .formula-plus,
+    .formula-equals {
+        font-size: 1.5rem;
+    }
+
+    .formula-result {
+        padding: 18px 25px;
+        border-radius: 10px;
+    }
+
+    .formula-result p {
+        font-size: 1rem;
+    }
+
+    /* Coaching Page - compact */
+    .overview-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .overview-stat {
+        padding: 20px 15px;
+        border-radius: 12px;
+    }
+
+    .stat-icon {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    .stat-value {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+
+    /* Phases Timeline - compact */
+    .phases-timeline {
         grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .phase-card {
+        padding: 22px 18px;
+        border-radius: 15px;
+    }
+
+    .phase-header {
+        margin-bottom: 15px;
+    }
+
+    .phase-number {
+        padding: 4px 12px;
+        font-size: 0.75rem;
+    }
+
+    .phase-hours {
+        padding: 4px 10px;
+        font-size: 0.7rem;
+    }
+
+    .phase-icon {
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+
+    .phase-card h3 {
+        font-size: 1.05rem;
+        margin-bottom: 5px;
+    }
+
+    .phase-eng {
+        font-size: 0.75rem;
+        margin-bottom: 15px;
+    }
+
+    .phase-content ul li {
+        padding: 5px 0;
+        padding-left: 18px;
+        font-size: 0.85rem;
+    }
+
+    .phase-output {
+        margin-top: 15px;
+        padding-top: 12px;
+        font-size: 0.8rem;
+    }
+
+    /* Deliverables - compact */
+    .deliverables-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .deliverable-card {
+        padding: 22px 18px;
+        border-radius: 12px;
+    }
+
+    .deliverable-icon {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    .deliverable-card h4 {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+
+    .deliverable-card p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    /* Results Grid - compact */
+    .results-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .result-card {
+        padding: 22px 15px;
+        border-radius: 12px;
+    }
+
+    .result-icon {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    .result-value {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+
+    .result-label {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+
+    .result-card p {
+        font-size: 0.75rem;
+    }
+
+    /* Coach Profile - compact */
+    .coach-profile {
+        gap: 25px;
+    }
+
+    .coach-photo-frame {
+        padding: 8px;
+    }
+
+    .coach-photo {
+        max-width: 160px;
+    }
+
+    .coach-awards {
+        margin-top: 10px;
+        font-size: 0.75rem;
+    }
+
+    .coach-placeholder {
+        width: 120px;
+        height: 120px;
+        font-size: 1.3rem;
+    }
+
+    .coach-placeholder small {
+        font-size: 0.8rem;
+    }
+
+    .coach-info h3 {
+        font-size: 1.3rem;
+        margin-bottom: 3px;
+    }
+
+    .coach-title {
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+    }
+
+    .coach-desc p {
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+        line-height: 1.6;
+    }
+
+    .coach-desc ul li {
+        padding: 5px 0;
+        padding-left: 20px;
+        font-size: 0.85rem;
+    }
+
+    /* Contact Page - compact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-form-wrapper h2 {
+        font-size: 1.4rem;
+        margin-bottom: 6px;
+    }
+
+    .contact-form-wrapper > p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
     }
 
     .form-row {
         grid-template-columns: 1fr;
+        gap: 18px;
     }
 
-    .value-flow {
-        flex-direction: column;
+    .form-group label {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
     }
 
-    .value-arrow {
-        transform: rotate(90deg);
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+        border-radius: 8px;
     }
 
-    .system-flow {
-        flex-direction: column;
+    .checkbox-group {
+        margin-top: 20px;
+    }
+
+    .checkbox-label {
+        font-size: 0.85rem;
+    }
+
+    /* Contact Info - compact */
+    .contact-info-wrapper {
+        gap: 15px;
+    }
+
+    .contact-info-card {
+        padding: 22px 18px;
+        border-radius: 15px;
+    }
+
+    .contact-info-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 3px;
+    }
+
+    .contact-info-card > p {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+
+    .info-items {
+        gap: 12px;
+    }
+
+    .info-item {
+        gap: 10px;
+    }
+
+    .info-icon {
+        font-size: 1.2rem;
+    }
+
+    .info-item strong {
+        font-size: 0.75rem;
+    }
+
+    .info-item p {
+        font-size: 0.9rem;
+    }
+
+    .why-contact-card {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .why-contact-card h4 {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .why-contact-card ul li {
+        padding: 6px 0;
+        font-size: 0.85rem;
+    }
+
+    .quote-card {
+        padding: 22px;
+        border-radius: 12px;
+    }
+
+    .quote-card blockquote {
+        font-size: 1.05rem;
+        margin-bottom: 10px;
+    }
+
+    .quote-sub {
+        font-size: 0.85rem;
+    }
+
+    /* FAQ - compact */
+    .faq-item {
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .faq-question {
+        padding: 18px 20px;
+        gap: 10px;
+    }
+
+    .faq-question span:first-child {
+        font-size: 1rem;
+    }
+
+    .faq-question h4 {
+        font-size: 0.95rem;
+    }
+
+    .faq-toggle {
+        font-size: 1.2rem;
+    }
+
+    .faq-answer p {
+        padding: 0 20px 18px 45px;
+        font-size: 0.85rem;
+        line-height: 1.6;
     }
 }

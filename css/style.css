@@ -988,11 +988,29 @@ section {
 }
 
 @media (max-width: 768px) {
-    h1 { font-size: 2.5rem; }
-    h2 { font-size: 2rem; }
+    /* Base typography - compact */
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2rem; }
+    h4 { font-size: 1rem; }
+    p { font-size: 0.95rem; }
 
-    .hero-title {
-        font-size: 2.2rem;
+    body {
+        line-height: 1.5;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Navigation */
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .logo-img {
+        height: 32px;
     }
 
     .nav-menu {
@@ -1003,8 +1021,8 @@ section {
         right: 0;
         background: white;
         flex-direction: column;
-        padding: 20px;
-        gap: 15px;
+        padding: 15px;
+        gap: 10px;
         box-shadow: var(--shadow);
     }
 
@@ -1016,29 +1034,328 @@ section {
         display: block;
     }
 
+    .nav-cta {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+    }
+
+    /* Hero Section - compact */
+    .hero {
+        min-height: auto;
+        padding: 70px 0 40px;
+    }
+
+    .hero-badge {
+        padding: 6px 14px;
+        font-size: 0.75rem;
+        margin-bottom: 15px;
+    }
+
+    .hero-title {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+
+    .hero-quote {
+        padding: 15px 18px;
+        margin-bottom: 20px;
+    }
+
+    .hero-quote p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    .hero-stats {
+        padding: 15px 20px;
+        gap: 25px;
+        border-radius: 12px;
+        margin-top: 20px;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    /* Section Common - compact */
+    section {
+        padding: 40px 0;
+    }
+
+    .section-header {
+        margin-bottom: 25px;
+    }
+
+    .section-badge {
+        padding: 5px 14px;
+        font-size: 0.75rem;
+        margin-bottom: 12px;
+    }
+
+    .section-title {
+        margin-bottom: 12px;
+    }
+
+    .section-desc {
+        font-size: 0.9rem;
+    }
+
+    /* Score Section - compact */
+    .score-grid {
+        gap: 25px;
+    }
+
+    .score-gauge {
+        width: 200px;
+        height: 200px;
+    }
+
+    .gauge-center {
+        width: 130px;
+        height: 130px;
+    }
+
+    .gauge-score {
+        font-size: 2.5rem;
+    }
+
+    .gauge-label {
+        font-size: 0.8rem;
+    }
+
+    .score-target {
+        padding: 10px 15px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .target-number {
+        font-size: 1.3rem;
+    }
+
+    .target-label {
+        font-size: 0.7rem;
+    }
+
+    .score-details {
+        gap: 12px;
+    }
+
+    .score-item {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .score-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+    }
+
+    .score-info h4 {
+        font-size: 0.9rem;
+    }
+
+    .score-info p {
+        font-size: 0.8rem;
+    }
+
+    .score-bar {
+        height: 6px;
+        margin-top: 8px;
+    }
+
+    .score-values {
+        font-size: 0.75rem;
+        margin-top: 5px;
+    }
+
+    /* Features Section - compact */
+    .features-grid {
+        gap: 15px;
+    }
+
+    .feature-card {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .feature-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        border-radius: 12px;
+    }
+
+    .feature-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .feature-card p {
+        font-size: 0.85rem;
+    }
+
+    /* Strategy Section - compact */
     .strategy-grid {
         grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .strategy-card {
+        padding: 20px 15px;
+        border-radius: 12px;
+    }
+
+    .strategy-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .strategy-card h4 {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+
+    .strategy-card p {
+        font-size: 0.8rem;
+    }
+
+    /* Process Section - compact */
+    .process-timeline {
+        padding: 20px 0;
+        gap: 25px;
+    }
+
+    .process-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    .process-step h4 {
+        font-size: 0.95rem;
+        margin-bottom: 5px;
+    }
+
+    .process-step p {
+        font-size: 0.8rem;
+    }
+
+    /* CTA Section - compact */
+    .cta-section {
+        padding: 40px 0;
+    }
+
+    .cta-section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+    }
+
+    .cta-section p {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+
+    /* Footer - compact */
+    .footer {
+        padding: 35px 0 20px;
     }
 
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 25px;
+        margin-bottom: 25px;
     }
 
-    .floating-buttons {
-        left: 15px;
-        bottom: 90px;
-        gap: 10px;
+    .footer-brand .logo-text {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
     }
 
-    .floating-btn {
-        padding: 10px 14px;
+    .footer-brand p {
+        font-size: 0.85rem;
+    }
+
+    .footer h4 {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+    }
+
+    .footer ul li {
+        margin-bottom: 8px;
+        font-size: 0.85rem;
+    }
+
+    .footer-bottom {
+        padding-top: 20px;
         font-size: 0.8rem;
     }
 
-    .btn-icon {
-        font-size: 1rem;
+    /* Floating Buttons - compact */
+    .floating-buttons {
+        left: 10px;
+        bottom: 80px;
+        gap: 8px;
     }
+
+    .floating-btn {
+        padding: 8px 12px;
+        font-size: 0.75rem;
+        border-radius: 30px;
+    }
+
+    .btn-icon {
+        font-size: 0.95rem;
+    }
+
+    .btn-text {
+        font-size: 0.7rem;
+    }
+
+    /* Chatbot Label */
+    .chatbot-label {
+        right: 65px;
+        bottom: 18px;
+        padding: 6px 12px;
+        font-size: 0.7rem;
+    }
+
+    /* Utility adjustments */
+    .mt-40 { margin-top: 25px; }
+    .mb-40 { margin-bottom: 25px; }
 }
 
 /* Animations */

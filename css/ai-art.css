@@ -1002,50 +1002,528 @@
 }
 
 @media (max-width: 768px) {
-    .tech-grid {
-        grid-template-columns: repeat(2, 1fr);
+    /* Section Dark/Gradient - compact */
+    .section-gradient,
+    .section-dark,
+    .section-light {
+        padding: 35px 0;
+    }
+
+    /* AI Intro - compact */
+    .ai-intro {
+        gap: 25px;
+    }
+
+    .ai-intro-content h2 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+
+    .lead-text {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .ai-philosophy {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .ai-philosophy blockquote {
+        font-size: 1.05rem;
+        margin-bottom: 12px;
+    }
+
+    .ai-philosophy p {
+        font-size: 0.85rem;
+        line-height: 1.6;
     }
 
     .ai-intro-visual {
-        flex-direction: column;
+        flex-direction: row;
+        gap: 12px;
     }
 
+    .visual-card {
+        padding: 20px 15px;
+        border-radius: 12px;
+    }
+
+    .visual-icon {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+
+    .visual-card h4 {
+        font-size: 0.95rem;
+        margin-bottom: 5px;
+    }
+
+    .visual-card p {
+        font-size: 0.75rem;
+    }
+
+    /* Tech Grid - compact */
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .tech-card {
+        padding: 18px 12px;
+        border-radius: 12px;
+    }
+
+    .tech-icon {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    .tech-card h4 {
+        font-size: 0.85rem;
+        margin-bottom: 5px;
+    }
+
+    .tech-card p {
+        font-size: 0.7rem;
+        line-height: 1.4;
+    }
+
+    /* Gallery Showcase - compact */
+    .gallery-showcase {
+        gap: 25px;
+    }
+
+    .gallery-location,
+    .cinema-location {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+        margin-bottom: 12px;
+    }
+
+    .location-icon {
+        font-size: 1rem;
+    }
+
+    .gallery-info h3,
+    .cinema-info h3 {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+    }
+
+    .gallery-info > p,
+    .cinema-info > p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* QR Experience - compact */
     .qr-experience {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
+        gap: 15px;
+        border-radius: 12px;
+        margin-bottom: 20px;
     }
 
-    .cinema-features {
-        grid-template-columns: 1fr;
+    .qr-placeholder {
+        width: 70px;
+        height: 70px;
+        font-size: 1.1rem;
+        border-radius: 10px;
+        margin-bottom: 6px;
     }
 
-    .benefits-grid {
-        grid-template-columns: 1fr;
+    .qr-visual p {
+        font-size: 0.75rem;
+    }
+
+    .qr-features {
+        gap: 10px;
+    }
+
+    .qf-icon {
+        font-size: 1rem;
+    }
+
+    .qr-feature span:last-child {
+        font-size: 0.8rem;
+    }
+
+    /* Gallery Features - compact */
+    .gallery-features li {
+        gap: 12px;
+        padding: 12px 0;
+    }
+
+    .feature-icon {
+        font-size: 1.5rem;
+    }
+
+    .gallery-features strong {
+        font-size: 0.95rem;
+        margin-bottom: 3px;
+    }
+
+    .gallery-features p {
+        font-size: 0.8rem;
+    }
+
+    /* Preview Grid - compact */
+    .preview-grid {
+        gap: 10px;
+    }
+
+    .art-placeholder {
+        border-radius: 12px;
+    }
+
+    .art-icon {
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+    }
+
+    .art-label {
+        font-size: 0.75rem;
+    }
+
+    .preview-caption {
+        margin-top: 12px;
+        font-size: 0.8rem;
+    }
+
+    /* Cinema Showcase - compact */
+    .cinema-showcase {
+        gap: 25px;
+    }
+
+    .cinema-screen {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .screen-content {
+        padding: 30px 20px;
+        border-radius: 10px;
+    }
+
+    .screen-title {
+        font-size: 1.3rem;
+        margin-bottom: 6px;
+    }
+
+    .screen-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 18px;
+    }
+
+    .play-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.1rem;
+    }
+
+    .cinema-concept {
+        padding: 18px;
+        border-radius: 10px;
+        margin-bottom: 18px;
+    }
+
+    .cinema-concept h4 {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
     }
 
     .concept-items {
         justify-content: center;
+        gap: 10px;
+    }
+
+    .ci-icon {
+        font-size: 1.3rem;
+    }
+
+    .concept-item span:last-child {
+        font-size: 0.75rem;
+    }
+
+    .concept-arrow {
+        font-size: 0.9rem;
+    }
+
+    /* Cinema Features - compact */
+    .cinema-features {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .cinema-feature {
+        padding: 18px 14px;
+        border-radius: 10px;
+    }
+
+    .cf-icon {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .cinema-feature h4 {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+
+    .cinema-feature p {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+
+    /* Benefits Grid - compact */
+    .benefits-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .benefit-card-v2 {
+        padding: 22px 15px;
+        border-radius: 12px;
+    }
+
+    .benefit-icon-large {
+        font-size: 2.2rem;
+        margin-bottom: 12px;
+    }
+
+    .benefit-card-v2 h3 {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+
+    .benefit-card-v2 p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
+    /* Global Recognition - compact */
+    .global-recognition {
+        gap: 25px;
+    }
+
+    .recognition-content h2 {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+    }
+
+    .recognition-content > p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 18px;
+    }
+
+    .recognition-highlight {
+        gap: 12px;
+        padding: 18px 20px;
+        border-radius: 10px;
+    }
+
+    .flag {
+        font-size: 2rem;
+    }
+
+    .recognition-highlight strong {
+        font-size: 1rem;
+    }
+
+    .recognition-highlight p {
+        font-size: 0.8rem;
+    }
+
+    .museum-card {
+        padding: 30px;
+        border-radius: 12px;
+    }
+
+    .museum-icon {
+        font-size: 2.5rem;
+        margin-bottom: 12px;
+    }
+
+    .museum-card p {
+        font-size: 0.9rem;
+    }
+
+    /* Vision Section - compact */
+    .vision-content {
+        gap: 25px;
+    }
+
+    .vision-text h2 {
+        font-size: 1.4rem;
+        margin-bottom: 18px;
+    }
+
+    .vision-quote {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        padding: 18px;
+        border-radius: 12px;
+        margin-bottom: 15px;
+    }
+
+    .author-info strong {
+        font-size: 0.95rem;
+    }
+
+    .author-info span {
+        font-size: 0.8rem;
+    }
+
+    .vision-card {
+        padding: 25px;
+        border-radius: 12px;
+    }
+
+    .vision-card h4 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .vision-card ul li {
+        padding: 8px 0;
+        font-size: 0.9rem;
+    }
+
+    /* Coming Soon - compact */
+    .coming-soon h2 {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+
+    .coming-soon > p {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+    }
+
+    .progress-info {
+        gap: 12px;
+        margin-bottom: 25px;
     }
 
     .progress-item {
         flex-direction: column;
         text-align: center;
+        padding: 18px 25px;
+        border-radius: 10px;
+        gap: 10px;
     }
 
+    .progress-icon {
+        font-size: 1.5rem;
+    }
+
+    .progress-label {
+        font-size: 0.9rem;
+    }
+
+    .progress-status {
+        padding: 4px 12px;
+        font-size: 0.75rem;
+    }
+
+    .coming-soon-note {
+        font-size: 0.9rem;
+    }
+
+    /* Video Showcase - compact */
+    .video-showcase {
+        margin-top: 40px;
+    }
+
+    .video-showcase h3 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .video-desc {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .video-card {
+        border-radius: 10px;
+    }
+
+    .play-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+
+    .video-info {
+        padding: 15px;
+    }
+
+    .video-lang {
+        font-size: 0.75rem;
+        margin-bottom: 5px;
+    }
+
+    .video-info h4 {
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+    }
+
+    .video-link {
+        font-size: 0.8rem;
+    }
+
+    /* Media Section - compact */
     .media-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
 
     .media-card {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
+        border-radius: 10px;
     }
 
-    .video-grid {
-        grid-template-columns: 1fr;
+    .media-card.has-thumbnail {
+        padding: 0;
     }
 
-    .video-showcase h3 {
-        font-size: 1.5rem;
+    .media-thumbnail {
+        height: 140px;
+    }
+
+    .media-card.has-thumbnail .media-content {
+        padding: 15px 18px 18px;
+    }
+
+    .media-icon {
+        font-size: 1.8rem;
+    }
+
+    .media-source {
+        font-size: 0.75rem;
+        margin-bottom: 5px;
+    }
+
+    .media-card h4 {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+
+    .media-link {
+        font-size: 0.8rem;
     }
 }
