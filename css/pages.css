@@ -1251,11 +1251,27 @@
 .coach-profiles {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    align-items: flex-start;
 }
 
 .coach-profiles .coach-profile {
     min-width: 100%;
     flex-shrink: 0;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.coach-profiles .coach-profile .coach-info {
+    max-width: 500px;
+    width: 100%;
+}
+
+.coach-profiles .coach-profile .coach-desc {
+    text-align: left;
+}
+
+.coach-profiles .coach-profile .coach-media {
+    margin-top: 20px;
 }
 
 .coach-slider-btn {
@@ -1342,6 +1358,55 @@
 .coach-name-btn.active {
     background: var(--primary-green);
     color: white;
+}
+
+/* Coach Media Cards */
+.coach-media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.coach-media-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 18px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    border: 2px solid #e9ecef;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.coach-media-card:hover {
+    background: white;
+    border-color: var(--primary-green);
+    transform: translateX(5px);
+}
+
+.coach-media-card .media-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.coach-media-card .media-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.coach-media-card .media-text strong {
+    font-size: 0.85rem;
+    color: var(--primary-green);
+}
+
+.coach-media-card .media-text span {
+    font-size: 0.75rem;
+    color: var(--dark-gray);
 }
 
 /* Coach Profile */
