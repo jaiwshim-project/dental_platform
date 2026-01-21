@@ -259,30 +259,103 @@
     <section class="section-white">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">COACH</span>
-                <h2 class="section-title">코칭 진행자</h2>
+                <span class="section-badge">CONSULTING & COACHING</span>
+                <h2 class="section-title">컨설팅 & 코칭 진행자</h2>
+                <div class="coach-name-buttons">
+                    <button class="coach-name-btn active" onclick="goToCoachSlide(0)">심재우 대표</button>
+                    <button class="coach-name-btn" onclick="goToCoachSlide(1)">임영일 원장</button>
+                    <button class="coach-name-btn" onclick="goToCoachSlide(2)">이용식 CMO</button>
+                </div>
             </div>
 
-            <div class="coach-profile">
-                <div class="coach-image">
-                    <div class="coach-photo-frame">
-                        <img src="../images/coach-shim.jpg" alt="심재우 대표 - Marquis Who's Who in the World 등재" class="coach-photo">
+            <div class="coach-slider-container">
+                <button class="coach-slider-btn prev" onclick="moveCoachSlide(-1)">&#10094;</button>
+                <div class="coach-profiles">
+                    <div class="coach-profile">
+                    <div class="coach-image">
+                        <div class="coach-photo-frame">
+                            <img src="../images/coach-shim.jpg" alt="심재우 대표 - Marquis Who's Who in the World 등재" class="coach-photo">
+                        </div>
+                        <p class="coach-awards">Marquis Who's Who in the World 2016, 2020 (2회)</p>
                     </div>
-                    <p class="coach-awards">Marquis Who's Who in the World 2016, 2020-2021</p>
+                    <div class="coach-info">
+                        <h3>심재우 대표</h3>
+                        <p class="coach-title">DentalClinicFinder CEO</p>
+                        <div class="coach-desc">
+                            <p>치과 경영 컨설팅 전문가로서 수많은 치과의 디지털 전환과 신뢰 시스템 구축을 성공적으로 이끌어온 경험을 보유하고 있습니다.</p>
+                            <ul>
+                                <li>기계공학 석사 (구조해석 & 디지털트윈)</li>
+                                <li>현대자동차 기술연구소 (5년)</li>
+                                <li>General Electric (8년)</li>
+                                <li>에스비컨설팅 (30년)</li>
+                                <li>8개국 B2B세일즈 국제공인 마스터트레이너</li>
+                                <li>Marquis Who's Who in the World 등재 (2016, 2020) 2회</li>
+                                <li>QLRCQ 상담 엔진 개발자</li>
+                                <li>DF-AI 신용점수 시스템 설계자</li>
+                                <li>5단계 상담 모델 창시자</li>
+                                <li>다수 치과 디지털 전환 컨설팅 수행</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="coach-info">
-                    <h3>심재우 대표</h3>
-                    <p class="coach-title">DentalClinicFinder CEO</p>
-                    <div class="coach-desc">
-                        <p>치과 경영 컨설팅 전문가로서 수많은 치과의 디지털 전환과 신뢰 시스템 구축을 성공적으로 이끌어온 경험을 보유하고 있습니다.</p>
-                        <ul>
-                            <li>Marquis Who's Who in the World 등재 (2016, 2020-2021)</li>
-                            <li>QLRCQ 상담 엔진 개발자</li>
-                            <li>DF-AI 신용점수 시스템 설계자</li>
-                            <li>5단계 상담 모델 창시자</li>
-                            <li>다수 치과 디지털 전환 컨설팅 수행</li>
-                        </ul>
+                <div class="coach-profile">
+                    <div class="coach-image">
+                        <div class="coach-photo-frame">
+                            <img src="../AI갤러리/image-removebg-preview (12).png" alt="임영일 원장 - 서울대 치의대 박사 수료" class="coach-photo">
+                        </div>
+                        <p class="coach-awards">서울대 치의대 박사 수료</p>
                     </div>
+                    <div class="coach-info">
+                        <h3>임영일 원장</h3>
+                        <p class="coach-title">화이트서울치과 대표원장</p>
+                        <div class="coach-desc">
+                            <p>자연치아 보존 철학을 바탕으로 환자 중심의 진료를 실천하는 치과보존과 전문의입니다.</p>
+                            <ul>
+                                <li>서울대학교 치과대학 졸업</li>
+                                <li>서울대학교 치과대학 석사</li>
+                                <li>서울대학교 치과대학 박사 수료</li>
+                                <li>서울대학교 치과병원 치과보존과 인턴·레지던트 수료</li>
+                                <li>서울대학교 치과대학 외래강사</li>
+                                <li>대한치과보존학회 정회원</li>
+                                <li>대한치과이식임플란트학회 정회원</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="coach-profile">
+                    <div class="coach-image">
+                        <div class="coach-photo-frame">
+                            <img src="../AI갤러리/이용식 CMO.png" alt="이용식 CMO" class="coach-photo">
+                        </div>
+                        <p class="coach-awards">전 대한치과의료기기산업협회 회장(13대)</p>
+                    </div>
+                    <div class="coach-info">
+                        <h3>이용식 CMO</h3>
+                        <p class="coach-title">DentalClinicFinder CMO</p>
+                        <div class="coach-desc">
+                            <p>40년 치과 재료 영업·유통 경력의 치과산업 전문가로서 업계 발전에 기여해왔습니다.</p>
+                            <ul>
+                                <li>(주)네오프란트 대표이사</li>
+                                <li>중앙대학교 신문방송학과 졸업</li>
+                                <li>한국치과의료기기산업협회 제13대 회장 (2015-2017)</li>
+                                <li>한국치과의료기기산업협회 제10·11·12대 부회장</li>
+                                <li>대전·충청지부장 역임</li>
+                                <li>국립치의학연구원 설립 추진위원</li>
+                                <li>독일·일본 기술 제휴 및 국내 기술 이전 주도</li>
+                                <li>자체 합금 브랜드 '골드윈(Goldwin)' 개발</li>
+                                <li>예방치과 브랜드 '뽀식이와 아거새' 런칭</li>
+                                <li>대한민국 문화예술대상 치의학 산업부문 최고 공로대상 (2014)</li>
+                                <li>대전광역시장 표창</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <button class="coach-slider-btn next" onclick="moveCoachSlide(1)">&#10095;</button>
+                <div class="coach-slider-dots">
+                    <span class="dot active" onclick="goToCoachSlide(0)"></span>
+                    <span class="dot" onclick="goToCoachSlide(1)"></span>
+                    <span class="dot" onclick="goToCoachSlide(2)"></span>
                 </div>
             </div>
         </div>
@@ -357,6 +430,40 @@
     </div>
 
     <script src="../js/main.js"></script>
+
+    <!-- Coach Slider Script -->
+    <script>
+        let coachSlideIndex = 0;
+        const coachSlides = document.querySelectorAll('.coach-profiles .coach-profile');
+        const coachDots = document.querySelectorAll('.coach-slider-dots .dot');
+        const coachNameBtns = document.querySelectorAll('.coach-name-btn');
+        const coachSlidesContainer = document.querySelector('.coach-profiles');
+
+        function updateCoachSlider() {
+            coachSlidesContainer.style.transform = `translateX(-${coachSlideIndex * 100}%)`;
+            coachDots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === coachSlideIndex);
+            });
+            coachNameBtns.forEach((btn, index) => {
+                btn.classList.toggle('active', index === coachSlideIndex);
+            });
+        }
+
+        function moveCoachSlide(direction) {
+            coachSlideIndex += direction;
+            if (coachSlideIndex < 0) coachSlideIndex = coachSlides.length - 1;
+            if (coachSlideIndex >= coachSlides.length) coachSlideIndex = 0;
+            updateCoachSlider();
+        }
+
+        function goToCoachSlide(index) {
+            coachSlideIndex = index;
+            updateCoachSlider();
+        }
+
+        // Auto slide every 5 seconds
+        setInterval(() => moveCoachSlide(1), 5000);
+    </script>
 
     <!-- AI TalkHub Chatbot SDK -->
     <script src="https://chatbot-sdk.aitalker.co.kr/talker-sdk.umd.js"></script>

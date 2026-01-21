@@ -1240,13 +1240,117 @@
     font-size: 0.9rem;
 }
 
+/* Coach Slider Container */
+.coach-slider-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.coach-profiles {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.coach-profiles .coach-profile {
+    min-width: 100%;
+    flex-shrink: 0;
+}
+
+.coach-slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--primary-green);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coach-slider-btn:hover {
+    background: var(--primary-green-dark);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.coach-slider-btn.prev {
+    left: -25px;
+}
+
+.coach-slider-btn.next {
+    right: -25px;
+}
+
+.coach-slider-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.coach-slider-dots .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 8px;
+    background: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.coach-slider-dots .dot.active {
+    background: var(--primary-green);
+    transform: scale(1.2);
+}
+
+.coach-slider-dots .dot:hover {
+    background: var(--gold);
+}
+
+/* Coach Name Buttons */
+.coach-name-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.coach-name-btn {
+    padding: 12px 25px;
+    border: 2px solid var(--primary-green);
+    background: white;
+    color: var(--primary-green);
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.coach-name-btn:hover {
+    background: var(--off-white);
+}
+
+.coach-name-btn.active {
+    background: var(--primary-green);
+    color: white;
+}
+
 /* Coach Profile */
 .coach-profile {
     display: flex;
-    gap: 50px;
-    align-items: flex-start;
-    max-width: 900px;
-    margin: 0 auto;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
 }
 
 .coach-image {
@@ -1280,9 +1384,12 @@
 
 .coach-photo {
     display: block;
-    max-width: 220px;
-    height: auto;
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    object-position: top center;
     border-radius: 4px;
+    background-color: #e8e8e8;
 }
 
 .coach-awards {
@@ -1323,8 +1430,8 @@
 }
 
 .coach-desc p {
-    margin-bottom: 20px;
-    line-height: 1.8;
+    margin-bottom: 12px;
+    line-height: 1.6;
 }
 
 .coach-desc ul {
@@ -1332,9 +1439,11 @@
 }
 
 .coach-desc ul li {
-    padding: 8px 0;
-    padding-left: 25px;
+    padding: 4px 0;
+    padding-left: 20px;
     position: relative;
+    font-size: 0.95rem;
+    line-height: 1.4;
 }
 
 .coach-desc ul li::before {
@@ -1639,6 +1748,20 @@
 
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+
+    .coach-slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .coach-slider-btn.prev {
+        left: 5px;
+    }
+
+    .coach-slider-btn.next {
+        right: 5px;
     }
 
     .coach-profile {
@@ -2390,6 +2513,11 @@
     }
 
     /* Coach Profile - compact */
+    .coach-profiles {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
     .coach-profile {
         gap: 25px;
     }
@@ -2399,7 +2527,8 @@
     }
 
     .coach-photo {
-        max-width: 160px;
+        width: 160px;
+        height: 200px;
     }
 
     .coach-awards {
